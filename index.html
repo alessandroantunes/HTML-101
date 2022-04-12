@@ -17,15 +17,33 @@
     <img src="C:\Programação\HTML 101\27e77f79-f736-44ba-8f93-a4e13a6b6e0a.jfif" alt="Alessandro na BHGE" width="auto"
         height="100" />
 
+    <div>
+        <a href="https://www.facebook.com/alessandro.antunes.566148"><br>My facebook profile<br></a>
+        <a href="https://www.linkedin.com/in/alessandro-antunes-1b0a29b5/"><br>My Linkedin profile<br></a>
+    </div>
+
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, natus accusamus expedita voluptates laborum
         corporis dolorem rem reiciendis voluptas corrupti quis aut officiis iure veniam aspernatur, eveniet illum minus
         quasi.
     </p>
-    <input id="nome" value="Nome?" /> <input id="sobrenome" value="Sobrenome?" /><button class="nomsob">Ok</button>
-    <p id="nomecomp"></p>
+    <form action="" method="GET">
+        <div>
+            <input required name="nome" id="nome" type="text" placeholder="Nome" />
+            <input name="sobrenome" id="sobrenome" type="text" placeholder="Sobrenome" required />
+        </div>
+        <div>
+            <br>
+            <textarea required name="areatexto" id="areatexto" cols="30" rows="10" placeholder="Descrição"></textarea>
+        </div>
+        <div>
+            <br>
+            <button name="botao" class="nomsob" type="submit">Ok</button>
+        </div>
+        <p id="nomecomp"></p>
+    </form>
 
-    <a href="https://www.facebook.com/alessandro.antunes.566148"><br>My facebook profile<br><br></a>
+
     <p>Clique para personagem aleatório de Star Wars</p>
     <button class="getRandomCharacter">Randomize!</button>
     <p></p>
@@ -41,7 +59,7 @@
                 <div id="16"></div>
             </td>
             <td>
-                <div id="0"></div>
+                <div id="0">a</div>
             </td>
         </tr>
         <tr>
@@ -165,7 +183,17 @@
             </td>
         </tr>
     </table>
-
+    <div>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4cJpiOPKH14" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+            <br>
+    </div>
+    <div>
+        <footer> &copy; Alessandro Antunes </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 

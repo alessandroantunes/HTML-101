@@ -4,23 +4,23 @@ let export1;
 
 inicializa();
 
-const nomsob = document.querySelector(".nomsob")
-nomsob.addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log("NOMSOB")
-    let nome = document.getElementById("nome").value
-    let sobrenome = document.getElementById("sobrenome").value
-    let nomecomp = document.getElementById("nomecomp")
-    if (nome == "Nome?" && sobrenome == "Sobrenome?") {
-        nomecomp.innerHTML = "Escreva seu nome e sobrenome!"
+// const nomsob = document.querySelector(".nomsob")
+// nomsob.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log("NOMSOB")
+//     let nome = document.getElementById("nome").value
+//     let sobrenome = document.getElementById("sobrenome").value
+//     let nomecomp = document.getElementById("nomecomp")
+//     // if (nome == "Nome?" && sobrenome == "Sobrenome?") {
+//     //     nomecomp.innerHTML = "Escreva seu nome e sobrenome!"
 
-    } else if (nome.length < 2 || sobrenome.length < 2) {
-        nomecomp.innerHTML = "Mínimo de 2 caracteres por campo!"
-    } else {
-        nomecomp.innerHTML = "Seu nome completo é: " + nome + " " + sobrenome
-        console.log(nome)
-    }
-})
+//     // } else if (nome.length < 2 || sobrenome.length < 2) {
+//     //     nomecomp.innerHTML = "Mínimo de 2 caracteres por campo!"
+//     // } else {
+//     //     nomecomp.innerHTML = "Seu nome completo é: " + nome + " " + sobrenome
+//     //     console.log(nome)
+//     // }
+// })
 
 function inicializa() {
     let nome;
