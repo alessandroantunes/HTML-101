@@ -4,6 +4,24 @@ let export1;
 
 inicializa();
 
+const nomsob = document.querySelector(".nomsob")
+nomsob.addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log("NOMSOB")
+    let nome = document.getElementById("nome").value
+    let sobrenome = document.getElementById("sobrenome").value
+    let nomecomp = document.getElementById("nomecomp")
+    if (nome == "Nome?" && sobrenome == "Sobrenome?") {
+        nomecomp.innerHTML = "Escreva seu nome e sobrenome!"
+
+    } else if (nome.length < 2 || sobrenome.length < 2) {
+        nomecomp.innerHTML = "Mínimo de 2 caracteres por campo!"
+    } else {
+        nomecomp.innerHTML = "Seu nome completo é: " + nome + " " + sobrenome
+        console.log(nome)
+    }
+})
+
 function inicializa() {
     let nome;
     let count = 0;
@@ -41,29 +59,24 @@ function fillRow2() {
     let count = 0;
     let tep;
     while (count <= 15) {
+
         nome = document.getElementById(count);
         tep = Object.values(export1)[count];
         tep = String(tep);
-        console.log(typeof tep);
 
-        if (count !=  9 || 10 || 11 || 12 ) {
-            console.log(count)
-            console.log("funca")
-            
-                console.log(tep)
-                nome.innerHTML = tep.charAt().toUpperCase() + tep.slice(1);
-            
-        }else{
-            console.log(count)
-            console.log("else", Object.keys(tep))
-            nome.innerHTML = tep;
+        if (count < 8) {
+
+            nome.innerHTML = tep.charAt().toUpperCase() + tep.slice(1);
+
+        } else {
+
+            nome.innerHTML = tep
 
         }
 
-        count++;
+        count++
 
     }
-
 }
 
 
